@@ -7,8 +7,10 @@ Right now only A-TYPE & CNAME Records are handled.
 "validate" function accepts filename containing the list of IPAddress & Domain to be matched, and DNS Server IPAddress used for querying.
 Result is created in another file "result" and is of the format 
   IPAddress, DomainName, DNS Server Returned IPAddress, match/nomatch
+  
 
 === Run as ===
+
 $ cat sample
   #IPAddress, Domain
   192.30.253.112, github.com
