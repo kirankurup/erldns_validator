@@ -12,9 +12,11 @@ Result is created in another file "result" and is of the format
 === Run as ===
 
 $ cat sample
+
   #IPAddress, Domain
   192.30.253.112, github.com
   192.30.253.111, google.com
+  
 $ erl
 > dns_validator:validate("sample", "8.8.8.8").
 ok
@@ -22,3 +24,4 @@ ok
 $ cat result
 192.30.253.112, github.com, 192.30.253.113, nomatch
 192.30.253.111, google.com, 216.58.197.78, nomatch
+
